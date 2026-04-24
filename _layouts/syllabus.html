@@ -1,0 +1,237 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
+  </head>
+  <body>
+    {% assign course = site.data.course %}
+    {% assign nav = site.data.navigation %}
+    {% assign ann = site.data.announcements %}
+    {% assign resources = site.data.resources %}
+    {% assign schedule = site.data.schedule %}
+    {% assign assignments = site.data.assignments %}
+    {% assign people = site.data.people %}
+    {% assign syllabus = site.data.syllabus %}
+
+    <header class="site-header">
+      <div class="wrap topbar">
+        <div class="brand">{{ course.code }}</div>
+        <nav class="topnav" aria-label="Main navigation">
+          {% for item in nav.primary %}
+            <a href="{{ item.url }}">{{ item.label }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap page-grid">
+      <section class="hero">
+        <div class="hero-topline">{{ course.institution }}</div>
+        <h1>{{ course.code }}: {{ course.title }}</h1>
+        <p class="dek">{{ course.description }}</p>
+        <div class="meta">
+          <span><strong>{{ course.term }}</strong></span>
+          {% if course.meetings and course.meetings != 'TBA' %}<span>{{ course.meetings }}</span>{% endif %}
+          {% if course.location and course.location != 'TBA' %}<span>{{ course.location }}</span>{% endif %}
+          <span><a href="mailto:{{ course.contact_email }}">{{ course.contact_email }}</a></span>
+        </div>
+        <div class="utility-links">
+          {% for item in nav.secondary %}
+            <a href="{{ item.url }}" {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.label }}</a>
+          {% endfor %}
+        </div>
+        <p class="hero-note">{{ course.hero_note }}</p>
+      </section>
+
+      <aside class="toc panel">
+        <h2>On this page</h2>
+        <nav id="toc" aria-label="Table of contents"></nav>
+      </aside>
+
+      <section id="announcements" class="panel toc-section">
+        <h2>Announcements</h2>
+        <div class="stack">
+          {% for item in ann.items %}
+            <article class="card">
+              <div class="note-head">
+                <h3>{{ item.title }}</h3>
+                {% if item.date %}<time>{{ item.date | date: "%b %-d, %Y" }}</time>{% endif %}
+              </div>
+              <p>{{ item.body }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="recordings-admin" class="panel toc-section">
+        <h2>Recordings and Administrative Requests</h2>
+        <div class="two-col">
+          <div>
+            <h3>{{ resources.recordings.heading }}</h3>
+            <ul class="link-list">
+              {% for item in resources.recordings.items %}
+                <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div>
+            <h3>{{ resources.admin_requests.heading }}</h3>
+            <ul class="request-list">
+              {% for item in resources.admin_requests.items %}
+                <li>
+                  <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+                  <span>{{ item.description }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+            <p class="muted">If there is something not on these forms, contact <a href="mailto:{{ course.contact_email }}">{{ course.contact_email }}</a>.</p>
+          </div>
+        </div>
+        <p class="calendar-link"><a href="{{ resources.calendar.url }}" target="_blank" rel="noopener noreferrer">{{ resources.calendar.label }}</a></p>
+      </section>
+
+      <section id="schedule" class="panel toc-section">
+        <h2>Schedule</h2>
+        <div class="table-wrap">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Day</th><th>Lecture Topic/Lab</th><th>Quiz</th><th>Lab</th><th>Project Deadlines</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for week in schedule.weeks %}
+                {% assign rowcount = week.entries | size %}
+                {% for entry in week.entries %}
+                  <tr {% if forloop.first %}class="week-start"{% endif %}>
+                    <td>
+                      {% if forloop.first %}<span class="week-badge">Week {{ week.week }}</span><br>{% endif %}
+                      {{ entry.date | date: "%b %-d" }}
+                    </td>
+                    <td>
+                      {% if entry.lecture_url %}<a href="{{ entry.lecture_url }}">{{ entry.lecture }}</a>{% else %}{{ entry.lecture }}{% endif %}
+                      {% if entry.notes %}<div class="muted small">{{ entry.notes }}</div>{% endif %}
+                    </td>
+                    <td>{% if entry.quiz_url %}<a href="{{ entry.quiz_url }}">{{ entry.quiz }}</a>{% else %}{{ entry.quiz }}{% endif %}</td>
+                    {% if forloop.first %}
+                      <td rowspan="{{ rowcount }}">{% if week.lab_url and week.lab %}<a href="{{ week.lab_url }}">{{ week.lab }}</a>{% else %}{{ week.lab }}{% endif %}</td>
+                      <td rowspan="{{ rowcount }}">
+                        {% for p in week.projects %}
+                          {% if p.project_url %}<a href="{{ p.project_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}{% unless forloop.last %}<br>{% endunless %}
+                        {% endfor %}
+                      </td>
+                    {% endif %}
+                  </tr>
+                {% endfor %}
+              {% endfor %}
+              <tr class="week-start"><td colspan="5"><strong>Final Exam:</strong> {{ schedule.final_exam.date }}, {{ schedule.final_exam.time }}</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="assignments" class="panel toc-section">
+        <h2>Assignments</h2>
+        <div class="cards-3">
+          {% for item in assignments.cards %}
+            <article class="card assignment-card">
+              <div class="assignment-icon">{{ item.icon }}</div>
+              <h3>{{ item.name }}</h3>
+              <p>{{ item.title }}</p>
+              <p><strong>Due:</strong> {{ item.due }}</p>
+              <p><a href="{{ item.url }}">Project Spec</a></p>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section id="people" class="panel toc-section">
+        <h2>People</h2>
+        <div class="people-grid-full">
+          <div>
+            <h3>Faculty</h3>
+            <div class="cards-2">
+              {% for p in people.faculty %}
+                <article class="card person-card">
+                  <div class="person-top">
+                    <div class="avatar-wrap">
+                      {% if p.image %}<img class="avatar" src="{{ p.image }}" alt="{{ p.name }}" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">{% endif %}
+                      <div class="avatar-fallback" {% if p.image %}style="display:none"{% endif %}>{{ p.name | split: ' ' | map: 'first' | join: '' | slice: 0,2 | upcase }}</div>
+                    </div>
+                    <div>
+                      <h4>{{ p.name }}</h4>
+                      <p class="muted">{{ p.role }}</p>
+                      <p><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+                    </div>
+                  </div>
+                  {% if p.platforms %}<p class="small"><strong>Platforms:</strong> {{ p.platforms | join: ', ' }}</p>{% endif %}
+                  {% if p.hobbies %}<p class="small"><strong>Interests:</strong> {{ p.hobbies | join: ', ' }}</p>{% endif %}
+                </article>
+              {% endfor %}
+            </div>
+          </div>
+          <div>
+            <h3>Staff</h3>
+            <div class="cards-3">
+              {% for p in people.staff %}
+                <article class="card person-card">
+                  <div class="person-top compact">
+                    <div class="avatar-wrap small-avatar-wrap">
+                      {% if p.image %}<img class="avatar small-avatar" src="{{ p.image }}" alt="{{ p.name }}" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">{% endif %}
+                      <div class="avatar-fallback small-avatar-fallback" {% if p.image %}style="display:none"{% endif %}>{{ p.name | split: ' ' | map: 'first' | join: '' | slice: 0,2 | upcase }}</div>
+                    </div>
+                    <div>
+                      <h4>{{ p.name }}</h4>
+                      <p><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+                    </div>
+                  </div>
+                  {% if p.platforms %}<p class="small"><strong>Platforms:</strong> {{ p.platforms | join: ', ' }}</p>{% endif %}
+                  {% if p.hobbies %}<p class="small"><strong>Interests:</strong> {{ p.hobbies | join: ', ' }}</p>{% endif %}
+                </article>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="syllabus" class="panel toc-section">
+        <h2>Syllabus</h2>
+        <div class="syllabus-intro prose">{{ syllabus.intro_markdown | markdownify }}</div>
+        <div class="accordion-stack">
+          {% for sec in syllabus.sections %}
+            <details class="accordion" {% if sec.open %}open{% endif %}>
+              <summary id="{{ sec.id }}">{{ sec.title }}</summary>
+              <div class="accordion-body prose">
+                {% if sec.markdown %}{{ sec.markdown | markdownify }}{% endif %}
+                {% if sec.bullet_items %}<ul>{% for item in sec.bullet_items %}<li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}</ul>{% endif %}
+                {% if sec.grading_table %}
+                <div class="table-wrap compact-table"><table><thead><tr>{% for h in sec.grading_table.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead><tbody>{% for row in sec.grading_table.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div>
+                {% endif %}
+                {% if sec.grade_scale_intro %}{{ sec.grade_scale_intro | markdownify }}{% endif %}
+                {% if sec.grade_scale %}
+                <div class="table-wrap compact-table"><table><thead><tr>{% for h in sec.grade_scale.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead><tbody>{% for row in sec.grade_scale.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div>
+                {% endif %}
+                {% if sec.comparison_table %}
+                <div class="table-wrap"><table><thead><tr>{% for h in sec.comparison_table.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead><tbody>{% for row in sec.comparison_table.rows %}<tr>{% for cell in row %}<td>{{ cell }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div>
+                {% endif %}
+                {% if sec.subsections %}
+                  {% for sub in sec.subsections %}
+                    <h4>{{ sub.title }}</h4>
+                    {{ sub.markdown | markdownify }}
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </details>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

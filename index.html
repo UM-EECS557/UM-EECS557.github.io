@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EECS 557: Communication Networks</title>
+<meta name="description" content="This course introduces various mathematical foundations of computer communication networks. It covers Internet architecture and protocol layers, Adaptive window flows control and TCP protocols, Routing algorithms and network planning, Network calculus, Queueing theory, Markov chains and packet switching, Fair queueing, Scheduling in wireless networks, Peer-to-peer networks, Load balancing in data centers, and Convex optimization and resource optimization.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/site.js"></script>
+</head>
+<body>
+<header class="site-header">
+<div class="wrap topbar">
+<div class="brand"><a href=".">EECS 557: Communication Networks</a></div>
+<span>Fall 2026:8/31/2026-12/21/2026</span>
+<nav class="topnav" aria-label="Main navigation">
+<a href="#schedule">Schedule</a>
+<a href="#people">Instructors</a>
+<a href="#syllabus">Syllabus</a>
+
+</nav>
+<img src=assets/headshots/EECS-informal.png width="250" />  
+</div></header>
+<main class="wrap page-grid">
+<section class="hero">
+<!--
+<div class="hero-topline">The University of Michigan</div>
+-->
+<p class="dek">This course introduces various mathematical foundations of computer communication networks. It covers Internet architecture and protocol layers, Adaptive window flows control and TCP protocols, Routing algorithms and network planning, Network calculus, Queueing theory, Markov chains and packet switching, Fair queueing, Scheduling in wireless networks, Peer-to-peer networks, Load balancing in data centers, and Convex optimization and resource optimization.</p>
+<div class="meta">
+<span><b>Lectures:</b> TBD MoWe, 9-10:30am</span>
+<span><b>Labs:</b> </span>
+</div>
+<div class="meta">
+<span><b>Venue:</b> TBD EECS</span>
+<span><b>Contact:</b> <a href="mailto:eecs557-f26@umich.edu">eecs557-f26@umich.edu</a></span>
+</div>
+<div class="utility-links">
+<b>Links</b>(Login):
+<a href="#recordings-admin" >Admin Requests</a>
+<a href="https://oh.eecs.umich.edu/courses/eecs270" target="_blank" rel="noopener noreferrer">Office Hours</a>
+<a href="https://piazza.com/umich/summer2026/eecs270100sp2026" target="_blank" rel="noopener noreferrer">Piazza</a>
+<a href="https://drive.google.com/drive/folders/1o94vkaVMNm4PSu6p68U7ZNaXem0zifLs?usp=drive_link" target="_blank" rel="noopener noreferrer">Files</a>
+<a href="https://autograder.io/web/course/375" target="_blank" rel="noopener noreferrer">Autograder</a>
+<a href="https://umich.instructure.com/courses/838166" target="_blank" rel="noopener noreferrer">Canvas</a>
+
+</div>
+
+</section>
+
+
+<aside class="toc panel">
+<h2>On this page</h2>
+<nav id="toc" aria-label="Table of contents"></nav>
+</aside>
+
+<section id="announcements" class="panel toc-section">
+<h2>Announcements</h2>
+<div class="stack">
+
+
+<article class="card">
+  <div class="note-head">
+    <h3><a href="https://um-eecs270.github.io" target="_blank" rel="noopener noreferrer">Syllabus is under construction!</a></h3>
+    
+  </div>
+  <p>This syllabus is under construction!  The content and links are subject to change.</p>
+</article>
+
+
+</div></section>
+
+<section id="schedule" class="panel toc-section">
+<h2>Schedule</h2>
+<div class="table-wrap"><table class="schedule-table">
+<thead><tr><th style="width: 18%;">Day</th><th>Lecture Topic/Lab</th><th>Homework</th>
+
+<!--
+<th>Lab</th>
+-->
+
+<th>Project</th>
+</tr></thead>
+<tbody>
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 1</span><br>Mon Aug 31</td>
+<td>1. Internet Overview</td>
+<td>HW1</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Sep 2</td>
+<td>2. Application Layers</td>
+<td>HW2</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 2</span><br>Mon Sep 7</td>
+<td>Labor Day Holiday</td>
+<td></td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Sep 9</td>
+<td>3. Transport Layers</td>
+<td>HW3</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 3</span><br>Mon Sep 14</td>
+<td>4. Convex Optimization</td>
+<td>HW4</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Sep 16</td>
+<td>5. Lagrangian Duality</td>
+<td>HW5</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 4</span><br>Mon Sep 21</td>
+<td>6. Resource allocation as utility maximization</td>
+<td>HW6</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2">Project 1 - Internet Mockup</td>
+
+</tr>
+
+<tr >
+<td>Wed Sep 23</td>
+<td>7. Primal Solution for Utility Maximization</td>
+<td>HW7</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 5</span><br>Mon Sep 28</td>
+<td>8. Dual Solution for Utility Maximization</td>
+<td>HW8</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Sep 30</td>
+<td>9. TCP Reno and Primal Solution</td>
+<td>HW9</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 6</span><br>Mon Oct 5</td>
+<td>10. TCP Vegas and Dual Solution</td>
+<td>HW10</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Oct 7</td>
+<td>11. Network Layer - Data Plane</td>
+<td>Exam 1 (6-8pm)</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 7</span><br>Mon Oct 12</td>
+<td>12. Routing Algorithms</td>
+<td>HW12</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Oct 14</td>
+<td>13. Markov Chains</td>
+<td>HW13</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 8</span><br>Mon Oct 19</td>
+<td>Fall Study Break</td>
+<td></td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Oct 21</td>
+<td>14. Discrete-Time Queues 1</td>
+<td>HW14</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 9</span><br>Mon Oct 26</td>
+<td>15. Discrete-Time Queues 2</td>
+<td>HW15</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Oct 28</td>
+<td>16. Fair Queues</td>
+<td>HW16</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 10</span><br>Mon Nov 2</td>
+<td>17. Switching Algorithms</td>
+<td>HW17</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Nov 4</td>
+<td>18. Low Complexity Switch Scheduling Algorithms</td>
+<td>HW18</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 11</span><br>Mon Nov 9</td>
+<td>19. Link Layer</td>
+<td>HW19</td>
+
+
+<!--
+<td rowspan="2">No Labs</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Nov 11</td>
+<td>20. Scheduling in Wireless Networks</td>
+<td>HW20</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 12</span><br>Mon Nov 16</td>
+<td>21. Scheduling in Wireless Networks 2</td>
+<td>HW21</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Nov 18</td>
+<td>22. Scheduling in Wireless Networks 3</td>
+<td>HW22</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 13</span><br>Mon Nov 23</td>
+<td>23. A Joint Formulation of the Transport, Network and MAC Problems</td>
+<td>HW23</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Nov 25</td>
+<td>Thanksgiving Holiday</td>
+<td></td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 14</span><br>Mon Nov 30</td>
+<td>24. Continuous-Time Markov Chains</td>
+<td>HW24</td>
+
+
+<!--
+<td rowspan="2">No Lab</td>
+-->
+
+<td rowspan="2"></td>
+
+</tr>
+
+<tr >
+<td>Wed Dec 2</td>
+<td>25. Continuous-Time Queues</td>
+<td>HW25</td>
+
+</tr>
+
+
+
+
+<tr class="week-start">
+<td><span class="week-badge">Week 15</span><br>Mon Dec 7</td>
+<td>26. Network Calculus</td>
+<td>HW26</td>
+
+
+<!--
+<td rowspan="1">No Labs</td>
+-->
+
+<td rowspan="1"></td>
+
+</tr>
+
+
+<tr class="week-start"><td colspan="5"><strong>Final Exam:</strong> TBD, 4-6PM</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<!--
+<section id="assignments" class="panel toc-section">
+<h2>Projects</h2>
+<div class="cards-3">
+
+<article class="card assignment-card">
+<div class="assignment-icon">📘</div>
+<h3>Project 0</h3>
+<p>Getting Started</p>
+<p><strong>Due:</strong> No Due Date - Do not submit</p>
+<p><a href="https://umich.instructure.com/courses/815882/pages/project-0-majority-tutorial">Project Spec</a></p>
+</article>
+
+<article class="card assignment-card">
+<div class="assignment-icon">🔬</div>
+<h3>Project 1</h3>
+<p>Selector</p>
+<p><strong>Due:</strong> May 10, 2026</p>
+<p><a href="https://umich.instructure.com/courses/815882/pages/project-1-selector">Project Spec</a></p>
+</article>
+
+<article class="card assignment-card">
+<div class="assignment-icon">🖥️</div>
+<h3>Project 2</h3>
+<p>Robot Control</p>
+<p><strong>Due:</strong> May 15, 2026</p>
+<p><a href="https://umich.instructure.com/courses/815882/pages/project-2-robot-control">Project Spec</a></p>
+</article>
+
+<article class="card assignment-card">
+<div class="assignment-icon">🧮</div>
+<h3>Project 3</h3>
+<p>Combinational Calculator</p>
+<p><strong>Due:</strong> May 20, 2026</p>
+<p><a href="https://umich.instructure.com/courses/815882/pages/project-3-combinational-calculator">Project Spec</a></p>
+</article>
+
+<article class="card assignment-card">
+<div class="assignment-icon">⏱️</div>
+<h3>Project 4</h3>
+<p>Timing and Delay</p>
+<p><strong>Due:</strong> May 28, 2026</p>
+<p><a href="https://umich.instructure.com/courses/815882/pages/project-4-timing-and-delay">Project Spec</a></p>
+</article>
+
+<article class="card assignment-card">
+<div class="assignment-icon">🔢</div>
+<h3>Project 5</h3>
+<p>Up-Down Counter</p>
+<p><strong>Due:</strong> June 2, 2026</p>
+<p><a href="https://umich.instructure.com/courses/815882/pages/project-5-up-down-counter">Project Spec</a></p>
+</article>
+
+<article class="card assignment-card">
+<div class="assignment-icon">🚦</div>
+<h3>Project 6</h3>
+<p>Traffic Light Controller</p>
+<p><strong>Due:</strong> June 11, 2026</p>
+<p><a href="https://umich.instructure.com/courses/815882/pages/project-6-traffic-light-controller">Project Spec</a></p>
+</article>
+
+<article class="card assignment-card">
+<div class="assignment-icon">🧮</div>
+<h3>Project 7</h3>
+<p>Sequential Calculator</p>
+<p><strong>Due:</strong> June 20, 2026</p>
+<p><a href="https://umich.instructure.com/courses/815882/pages/project-7-sequential-calculator">Project Spec</a></p>
+</article>
+
+</div>
+</section>
+-->
+
+<section id="recordings-admin" class="panel toc-section">
+<h2>Logistics</h2>
+<div class="two-col">
+<div><h3>Recordings</h3><ul class="link-list">
+<li><a href="https://umich.instructure.com/courses/838166/external_tools/80215" target="_blank" rel="noopener noreferrer">Lectures</a></li>
+<li><a href="https://drive.google.com/drive/folders/1o94vkaVMNm4PSu6p68U7ZNaXem0zifLs?usp=sharing" target="_blank" rel="noopener noreferrer">Lecture slides</a></li>
+<li><a href="https://drive.google.com/drive/folders/1o94vkaVMNm4PSu6p68U7ZNaXem0zifLs?usp=sharing" target="_blank" rel="noopener noreferrer">Lab slides</a></li>
+
+</ul></div>
+<div><h3>Admin Requests</h3><ul class="request-list">
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScH3Y1NivaqrrChaOD5ataltFejKfjmqz0hm9x0JDGYI1i-yw/viewform" target="_blank" rel="noopener noreferrer">Exam 1 Conflict</a><span>Report a conflict and request alternate scheduling for the first exam.</span></li>
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfkVQ7GEjlCpK9zHwolTfjKEifQscgI9jUuiDtEprUJRKKgdQ/viewform" target="_blank" rel="noopener noreferrer">Exam 2 Conflict</a><span>Report a conflict and request alternate scheduling for the second exam.</span></li>
+
+</ul><p class="muted">If there is something not on these forms, contact <a href="mailto:eecs557-f26@umich.edu">eecs557-f26@umich.edu</a>.</p></div>
+</div>
+<p class="calendar-link"><a href="https://calendar.google.com/calendar/u/0?cid=Y18yM2QxZjNlMWVkNmI2NDlkYTNlMTcxNTRhMjBkYTI0ZDU1ZTEyNTg0NGMzZmEyMmIxNWRmZmUzMTZiNmJhMDhlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank" rel="noopener noreferrer">Open in Google Calendar</a></p>
+</section>
+
+<section id="people" class="panel toc-section">
+<h2>Instructors</h2>
+<div class="people-grid-full">
+<div>
+<!--h3>Faculty</h3-->
+<div class="cards-2">
+
+<article class="card person-card">
+<div class="person-top">
+<div class="avatar-wrap">
+<img class="avatar" src="assets/headshots/victor_liu.jpg" alt="Victor Liu" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+<div class="avatar-fallback" style="display:none">VL</div>
+</div>
+<div>
+<h4>Victor Liu</h4>
+<p class="muted">Instructor</p>
+<p><a href="mailto:vyl@umich.edu">vyl@umich.edu</a>,
+<a href="https://websites.umich.edu/~vyl/">web</a></p>
+</div>
+</div>
+<p class="small"><strong>Platforms:</strong> Linux, Vim, Emacs, VS Code</p>
+<p class="small"><strong>Interests:</strong> swimming, running, skiing, coffee</p>
+</article>
+
+</div>
+</div>
+<div>
+<!--h3>Staff</h3-->
+<div class="cards-2">
+
+<article class="card person-card">
+<div class="person-top compact">
+<div class="avatar-wrap avatar-wrap">
+<img class="avatar avatar" src="assets/headshots/ANONYMOUS.png" alt="TBD" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+<div class="avatar-fallback avatar-fallback" style="display:none">T</div>
+</div>
+<div>
+<h4>TBD</h4>
+<p class="muted">Lab TA</p>
+<p><a href="mailto:TBD">TBD</a></p>
+</div>
+</div>
+<p class="small"><strong>Platforms:</strong> Mac, Linux, VS Code</p>
+<p class="small"><strong>Interests:</strong> croissant, black_nib, airplane</p>
+</article>
+
+<article class="card person-card">
+<div class="person-top compact">
+<div class="avatar-wrap avatar-wrap">
+<img class="avatar avatar" src="assets/headshots/ANONYMOUS.jpg" alt="TBD" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+<div class="avatar-fallback avatar-fallback" style="display:none">T</div>
+</div>
+<div>
+<h4>TBD</h4>
+<p class="muted">Grader</p>
+<p><a href="mailto:TBD">TBD</a></p>
+</div>
+</div>
+<p class="small"><strong>Platforms:</strong> Mac, Linux, VS Code</p>
+<p class="small"><strong>Interests:</strong> croissant, black_nib, airplane</p>
+</article>
+
+</div>
+</div>
+</div>
+</section>
+
+<section id="syllabus" class="panel toc-section">
+<h2>Syllabus</h2>
+<div class="syllabus-intro prose"><p>EECS 557 introduces you to the exciting world of digital logic design. Digital devices have proliferated in the last quarter century and have become essential in just about anything we do or depend on in a modern society. Computers of all varieties are now at the heart of commerce, communications, education, health care, entertainment, defense, etc. Personal computers have become standard fixtures in most homes and schools. But while the computer is the most visible digital computing device, it is by no means the only one. Embedded digital controllers can be found in such diverse applications as automobiles, airplanes, elevators, cellphones, televisions, cameras, and many kitchen appliances, to name just a tiny few.</p>
+<p>This course provides you with a basic understanding of what digital devices are, how they operate, and how they can be designed to perform useful functions. It forms the foundation for the more advanced hardware courses in our CS, CE, and EE curricula, notably EECS 373, 427, and 470. You will learn about digital design through a combination of lectures, labs, and projects. Through the projects, you will learn to apply the concepts learned in lecture to design real digital circuits using modern design tools and FPGAs.</p>
+</div>
+<div class="accordion-stack">
+
+<details class="accordion" open>
+<summary id="attendance-policy">Attendance Policy</summary>
+<div class="accordion-body prose">
+<p>In-person attendance is <strong>highly encouraged</strong>. If you must miss class for any reason, recordings of the lectures can be accessed through this link no later than a few hours after the lecture. Lectures cannot be attended remotely via Zoom.
+<strong>Lab sessions require attendance, and labs are graded</strong>.</p>
+
+
+
+
+
+
+
+</div>
+</details>
+
+<details class="accordion" open>
+<summary id="course-topics">Course Topics</summary>
+<div class="accordion-body prose">
+
+<ul><li>Internet architecture and protocol layers,</li><li>Adaptive window flows control and TCP protocols,</li><li>Routing algorithms and network planning,</li><li>Network calculus,</li><li>Queueing theory,</li><li>Markov chains and packet switching,</li><li>Fair queueing,</li><li>Scheduling in wireless networks,</li><li>Peer-to-peer networks,</li><li>Load balancing in data centers,</li><li>Convex optimization and resource optimization</li></ul>
+
+
+
+
+
+</div>
+</details>
+
+<details class="accordion" >
+<summary id="projects">Projects</summary>
+<div class="accordion-body prose">
+<p>You will complete <strong>one or two projects</strong> through the semester. In these projects, you will design and implement various communication network scenarios to understand the concepts discussed in the lectures.
+The projects should be independent to each other.</p>
+<p>For further details on the projects, please refer to the <a href="">Projects Overview</a> page.</p>
+
+
+
+
+
+
+
+</div>
+</details>
+
+<details class="accordion" >
+<summary id="textbooks">Textbooks</summary>
+<div class="accordion-body prose">
+
+<ul><li><IMG SRC='https://lh3.googleusercontent.com/sitesv/AA5AbUCy0zzb2RqXafXGT_FjjJvxyFTy0Ca71ojHKHyIb8qRUWEM1yOSGTEXiXorPJnWu-vEbjkSyMj75CwLxSPNVetaZ-bcVX54kjz7te6WmBpvh2b00c3fYk6zZmCp60sftGhUeTZS6YS6QBLMvwepI1HzmawcFaHrtb0kOofQtSBPe0qvELia4kWoctGxcksdmp2Yi6p27xj7mQ8xZ5x8aKGr9YbrvuH3mU8-3jU=w1280' height='130' width='100' align=right /> R. Srikant and Lei Ying, Communication Networks, An Optimization, Control, and Stochastic Networks Perspective, Cambridge University Press (February 17, 2014).</p>
+<ul>
+<li>Slides and pdf files of some of the chapters can be found on <a href="https://sites.google.com/view/comm-networks">the book website</a>.</li>
+<li>Ebook is available at UM library <a href="https://search.lib.umich.edu/catalog/record/99187453059306381">here</a></li>
+</ul>
+</li><li>Jim Kurose and Keith Ross, Computer Networking - A Top-Down Approach, 9th Ed. Pearson, 2025. <IMG SRC='https://www.pearson.com/store/pmccommercewebservices/v2/medias/size-W370-A1030-00-40-63-A103000406341-A103000406341-Lrg.jpg?context=bWFzdGVyfGltYWdlc3wyMTMzMjN8aW1hZ2UvanBlZ3xzeXMtbWFzdGVyL2ltYWdlcy9oOWUvaDAwLzE1MDMzMTk0NTEyNDE0L3NpemVfVzM3MF8vQTEwMzAvMDAvNDAvNjMvQTEwMzAwMDQwNjM0MS9BMTAzMDAwNDA2MzQxX0xyZy5qcGd8MTQyNmFlNzM3NGRhN2I0OTk0ODEzYmQzZDlmMWMwMzNmMzk5Y2VhZWY0NGZiNzkyNjkxNzI3OGJjZjMxN2ZjNA&imwidth=3840' width='100' align=right /></p>
+<ul>
+<li>Book <a href="https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm">website</a>.</li>
+</ul>
+</li><li>Additional materials for <a href="https://stanford.edu/class/ee364a/lectures.html">convex optimization</a></li><li>Lecture recordings from Winter 2021 can be found under <a href="https://umich.instructure.com/courses/838166/external_tools/53084">Media Gallery</a></li></ul>
+
+
+
+
+
+</div>
+</details>
+
+<details class="accordion" >
+<summary id="grading">Grading</summary>
+<div class="accordion-body prose">
+<p>Your final grade will be determined based on the following components:
+The 5 lowest quizzes will be dropped from your final grade calculation. The 2 lowest lab grades will also be dropped.</p>
+
+
+<div class="table-wrap compact-table"><table><thead><tr><th>Component</th><th>Weight</th></tr></thead><tbody><tr><td>Attendence and Quizzes</td><td>20%</td></tr><tr><td>Homework</td><td>40%</td></tr><tr><td>Exam 1</td><td>20%</td></tr><tr><td>Exam 2</td><td>20%</td></tr></tbody></table></div>
+<p>Your final letter grade will be determined based on your overall percentage in the course, according to the following scale:</p>
+
+<div class="table-wrap compact-table"><table><thead><tr><th>Percentage</th><th>Letter Grade</th></tr></thead><tbody><tr><td>100% - 95%</td><td>A+</td></tr><tr><td>95% - 90%</td><td>A</td></tr><tr><td>90% - 85%</td><td>A-</td></tr><tr><td>85% - 80%</td><td>B+</td></tr><tr><td>80% - 75%</td><td>B</td></tr><tr><td>75% - 70%</td><td>B-</td></tr><tr><td>70% - 60%</td><td>C</td></tr><tr><td>below 60%</td><td>E</td></tr></tbody></table></div>
+
+
+</div>
+</details>
+
+<details class="accordion" >
+<summary id="academic-integrity">Academic Integrity</summary>
+<div class="accordion-body prose">
+<p>We encourage collaboration, especially on concepts, tools, specifications, and strategies. However, all submitted work must be your own.
+If you are unsure about what constitutes collaboration versus copying, please ask a member of the teaching staff for clarification.</p>
+
+
+
+
+
+<div class="table-wrap"><table><thead><tr><th>Encouraged Collaboration</th><th>Unacceptable Collaboration</th></tr></thead><tbody><tr><td>Sharing high-level design strategies, e.g., module organization</td><td>Walking through a design or module step-by-step, sharing pseudocode, sharing comments</td></tr><tr><td>Helping others understand the spec or project nuances</td><td>Providing your code as a reference</td></tr><tr><td>Helping someone debug</td><td>Debugging someone's code for them</td></tr><tr><td>Explaining a synthesis error to someone</td><td>Fixing a synthesis error for someone</td></tr><tr><td>Discussing test strategies</td><td>Sharing test code to verify someone else's design, even if test cases are not submitted</td></tr><tr><td>Brainstorming edge cases for testing</td><td>Discussing specifics about what tests exposed instructor bugs on the autograder</td></tr><tr><td>Using starter code provided with a project or based on examples shown in lecture</td><td>Copying code in whole or in part, even if the code is modified \n Writing original code for someone else, or paying someone to write your project</td></tr><tr><td></td><td>Sharing your code in a way that could be copied, e.g., sending code over email or taking a picture of code</td></tr></tbody></table></div>
+<h4>Code Reuse</h4><p>Reusing code (your own or other students') from previous semesters is not permitted.</p>
+<h4>Publishing Code</h4><p>Any code you write for this course must not be published in any way or form, including posting on public repositories (e.g., GitHub, GitLab) or personal websites.</p>
+<h4>Generative AI Policy</h4><p>The use of generative AI tools is not permitted for writing code or completing assignments in this course.</p>
+
+</div>
+</details>
+
+<details class="accordion" >
+<summary id="attendance-policy">Attendance and pop quiz policy</summary>
+<div class="accordion-body prose">
+<p>You receive zero point if missing 50% or more pop quizzes. You are not allowed to take the quiz if you are not present when the quiz is distributed. You have five free absences (medical and non-medical) and will receive no penalty for missing a quiz if the instructor receives the absence note by 10am on the lecture day. You have unlimited excused absences for traveling due to university business. These absences need to be preapproved before you travel. The final grade of attendance and pop quizzes is based on the average.</p>
+
+
+
+
+
+
+
+</div>
+</details>
+
+</div>
+</section>
+</main>
+</body>
+</html>

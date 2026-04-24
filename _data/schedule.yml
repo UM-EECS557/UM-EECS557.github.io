@@ -1,0 +1,255 @@
+final_exam:
+  date: 'TBD'
+  time: '4-6PM'
+weeks:
+- week: 1
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-08-31'
+    lecture: 1. Internet Overview
+    lecture_url: ''
+    quiz: HW1
+    quiz_url: ''
+    notes: ''
+  - date: '2026-09-02'
+    lecture: 2. Application Layers
+    lecture_url: ''
+    quiz: HW2
+    quiz_url: ''
+    notes: ''
+- week: 2
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-09-07'
+    lecture: Labor Day Holiday
+    lecture_url: ''
+    quiz: ''
+    quiz_url: ''
+    notes: ''
+  - date: '2026-09-09'
+    lecture: 3. Transport Layers
+    lecture_url: ''
+    quiz: HW3
+    quiz_url: ''
+    notes: ''
+- week: 3
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-09-14'
+    lecture: 4. Convex Optimization
+    lecture_url: ''
+    quiz: HW4
+    quiz_url: ''
+    notes: ''
+  - date: '2026-09-16'
+    lecture: 5. Lagrangian Duality
+    lecture_url: ''
+    quiz: HW5
+    quiz_url: ''
+    notes: ''
+- week: 4
+  lab: No Lab
+  lab_url: ''
+  projects:
+  - title: Project 1 - Internet Mockup
+    project_url: ''
+  entries:
+  - date: '2026-09-21'
+    lecture: 6. Resource allocation as utility maximization
+    lecture_url: ''
+    quiz: HW6
+    quiz_url: ''
+    notes: ''
+  - date: '2026-09-23'
+    lecture: 7. Primal Solution for Utility Maximization
+    lecture_url: ''
+    quiz: HW7
+    quiz_url: ''
+    notes: ''
+- week: 5
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-09-28'
+    lecture: 8. Dual Solution for Utility Maximization
+    lecture_url: ''
+    quiz: HW8
+    quiz_url: ''
+    notes: ''
+  - date: '2026-09-30'
+    lecture: 9. TCP Reno and Primal Solution
+    lecture_url: ''
+    quiz: HW9
+    quiz_url: ''
+    notes: ''
+- week: 6
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-10-05'
+    lecture: 10. TCP Vegas and Dual Solution
+    lecture_url: ''
+    quiz: HW10
+    quiz_url: ''
+    notes: ''
+  - date: '2026-10-07'
+    lecture: 11. Network Layer - Data Plane
+    lecture_url: ''
+    quiz: Exam 1 (6-8pm)
+    quiz_url: ''
+    notes: ''
+- week: 7
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-10-12'
+    lecture: 12. Routing Algorithms
+    lecture_url: ''
+    quiz: HW12
+    quiz_url: ''
+    notes: ''
+  - date: '2026-10-14'
+    lecture: 13. Markov Chains
+    lecture_url: ''
+    quiz: HW13
+    quiz_url: ''
+    notes: ''
+- week: 8
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-10-19'
+    lecture: Fall Study Break
+    lecture_url: ''
+    quiz: ''
+    quiz_url: ''
+    notes: ''
+  - date: '2026-10-21'
+    lecture: 14. Discrete-Time Queues 1
+    lecture_url: ''
+    quiz: HW14
+    quiz_url: ''
+    notes: ''
+- week: 9
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-10-26'
+    lecture: 15. Discrete-Time Queues 2
+    lecture_url: ''
+    quiz: HW15
+    quiz_url: ''
+    notes: ''
+  - date: '2026-10-28'
+    lecture: 16. Fair Queues
+    lecture_url: ''
+    quiz: HW16
+    quiz_url: ''
+    notes: ''
+- week: 10
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-11-02'
+    lecture: 17. Switching Algorithms
+    lecture_url: ''
+    quiz: HW17
+    quiz_url: ''
+    notes: ''
+  - date: '2026-11-04'
+    lecture: 18. Low Complexity Switch Scheduling Algorithms
+    lecture_url: ''
+    quiz: HW18
+    quiz_url: ''
+    notes: ''
+- week: 11
+  lab: No Labs
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-11-09'
+    lecture: 19. Link Layer
+    lecture_url: ''
+    quiz: HW19
+    quiz_url: ''
+    notes: ''
+  - date: '2026-11-11'
+    lecture: 20. Scheduling in Wireless Networks
+    lecture_url: ''
+    quiz: HW20
+    quiz_url: ''
+    notes: ''
+- week: 12
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-11-16'
+    lecture: 21. Scheduling in Wireless Networks 2
+    lecture_url: ''
+    quiz: HW21
+    quiz_url: ''
+    notes: ''
+  - date: '2026-11-18'
+    lecture: 22. Scheduling in Wireless Networks 3
+    lecture_url: ''
+    quiz: HW22
+    quiz_url: ''
+    notes: ''
+- week: 13
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-11-23'
+    lecture: 23. A Joint Formulation of the Transport, Network and MAC Problems
+    lecture_url: ''
+    quiz: HW23
+    quiz_url: ''
+    notes: ''
+  - date: '2026-11-25'
+    lecture: Thanksgiving Holiday
+    lecture_url: ''
+    quiz: ''
+    quiz_url: ''
+    notes: ''
+- week: 14
+  lab: No Lab
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-11-30'
+    lecture: 24. Continuous-Time Markov Chains
+    lecture_url: ''
+    quiz: HW24
+    quiz_url: ''
+    notes: ''
+  - date: '2026-12-02'
+    lecture: 25. Continuous-Time Queues
+    lecture_url: ''
+    quiz: HW25
+    quiz_url: ''
+    notes: ''
+- week: 15
+  lab: No Labs
+  lab_url: ''
+  projects: []
+  entries:
+  - date: '2026-12-07'
+    lecture: 26. Network Calculus
+    lecture_url: ''
+    quiz: HW26
+    quiz_url: ''
+    notes: ''

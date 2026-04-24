@@ -1,0 +1,41 @@
+faculty:
+- name: Victor Liu
+  role: Instructor
+  email: vyl@umich.edu
+  url: https://websites.umich.edu/~vyl/
+  image: assets/headshots/victor_liu.jpg
+  platforms:
+  - Linux
+  - Vim
+  - Emacs
+  - VS Code
+  hobbies:
+  - swimming
+  - running
+  - skiing
+  - coffee
+staff:
+- name: TBD
+  role: Lab TA
+  email: TBD
+  image: assets/headshots/ANONYMOUS.png
+  platforms:
+  - Mac
+  - Linux
+  - VS Code
+  hobbies:
+  - croissant
+  - black_nib
+  - airplane
+- name: TBD
+  role: Grader
+  email: TBD
+  image: assets/headshots/ANONYMOUS.jpg
+  platforms:
+  - Mac
+  - Linux
+  - VS Code
+  hobbies:
+  - croissant
+  - black_nib
+  - airplane

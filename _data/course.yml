@@ -1,0 +1,26 @@
+code: EECS 557
+title: Communication Networks
+shorttitle: Communication Networks
+institution: The University of Michigan
+logo: assets/headshots/EECS-informal.png
+term: Fall 2026
+start: 8/31/2026
+end: 12/21/2026
+location: TBD EECS
+lectures: TBD MoWe, 9-10:30am
+contact_email: eecs557-f26@umich.edu
+description:  This course introduces various mathematical foundations of 
+ computer communication networks. 
+ It covers 
+ Internet architecture and protocol layers,
+ Adaptive window flows control and TCP protocols,
+ Routing algorithms and network planning,
+ Network calculus,
+ Queueing theory, Markov chains and packet switching,
+ Fair queueing,
+ Scheduling in wireless networks,
+ Peer-to-peer networks,
+ Load balancing in data centers, and
+ Convex optimization and resource optimization.
+
+hero_note: 

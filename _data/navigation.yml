@@ -1,0 +1,27 @@
+primary:
+- label: Schedule
+  url: '#schedule'
+#- label: Projects
+#  url: '#assignments'
+- label: Instructors
+  url: '#people'
+- label: Syllabus
+  url: '#syllabus'
+secondary:
+- label: Admin Requests
+  url: '#recordings-admin'
+- label: Office Hours
+  url: https://oh.eecs.umich.edu/courses/eecs557
+  external: true
+- label: Piazza
+  url: https://piazza.com/umich/
+  external: true
+- label: Files
+  url: https://drive.google.com/drive/folders/1o94vkaVMNm4PSu6p68U7ZNaXem0zifLs?usp=drive_link
+  external: true
+- label: Autograder
+  url: https://autograder.io/web/course/
+  external: true
+- label: Canvas
+  url: https://umich.instructure.com/courses/838166
+  external: true

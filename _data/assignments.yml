@@ -1,0 +1,41 @@
+cards:
+- name: Project 0
+  title: Getting Started
+  due: No Due Date - Do not submit
+  url: https://umich.instructure.com/courses/815882/pages/project-0-majority-tutorial
+  icon: 📘
+- name: Project 1
+  title: Selector
+  due: May 10, 2026
+  url: https://umich.instructure.com/courses/815882/pages/project-1-selector
+  icon: 🔬
+- name: Project 2
+  title: Robot Control
+  due: May 15, 2026
+  url: https://umich.instructure.com/courses/815882/pages/project-2-robot-control
+  icon: 🖥️
+- name: Project 3
+  title: Combinational Calculator
+  due: May 20, 2026
+  url: https://umich.instructure.com/courses/815882/pages/project-3-combinational-calculator
+  icon: 🧮
+- name: Project 4
+  title: Timing and Delay
+  due: May 28, 2026
+  url: https://umich.instructure.com/courses/815882/pages/project-4-timing-and-delay
+  icon: ⏱️
+- name: Project 5
+  title: Up-Down Counter
+  due: June 2, 2026
+  url: https://umich.instructure.com/courses/815882/pages/project-5-up-down-counter
+  icon: 🔢
+- name: Project 6
+  title: Traffic Light Controller
+  due: June 11, 2026
+  url: https://umich.instructure.com/courses/815882/pages/project-6-traffic-light-controller
+  icon: 🚦
+- name: Project 7
+  title: Sequential Calculator
+  due: June 20, 2026
+  url: https://umich.instructure.com/courses/815882/pages/project-7-sequential-calculator
+  icon: 🧮

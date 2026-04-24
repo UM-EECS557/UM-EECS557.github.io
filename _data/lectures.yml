@@ -1,0 +1,156 @@
+lectures:
+- name: Lecture 1
+  title: Internet Overview
+  slide: lecture-1-intro.pdf
+  url: 
+  icon: 📘
+  tag: networking
+- name: Lecture 2
+  title: Application Layer
+  slide: lecture-2-application.pdf
+  url: 
+  icon: 🔬
+  tag: networking
+- name: Lecture 3
+  title: Transport Layer
+  slide: lecture-2-transport.pdf
+  url: 
+  icon: 🖥️
+  tag: networking
+- name: Lecture 4
+  title: Convex Optimization
+  slide: lecture-3.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 5
+  title: Lagrangian Duality
+  slide: lecture-4.pdf
+  url: 
+  icon: ⏱️
+  tag: theory
+- name: Lecture 6
+  title: Resource allocation as utility maximization
+  slide: lecture-5.pdf
+  url: 
+  icon: 🔢
+  tag: theory
+- name: Lecture 7
+  title: Primal Solution for Utility Maximization
+  slide: lecture-6.pdf
+  url: 
+  tag: theory
+- name: Lecture 8
+  title: Dual Solution for Utility Maximization
+  slide: lecture-7.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 9
+  title: TCP Reno and Primal Solution
+  slide: lecture-8.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 10
+  title: TCP Vegas and Dual Solution
+  slide: lecture-9.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 11
+  title: Network Layer: Data Plane
+  slide: lecture-10.pdf
+  url: 
+  icon: 🧮
+  tag: networking
+- name: Lecture 12
+  title: Routing Algorithms
+  slide: lecture-11.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 13
+  title: Markov Chains
+  slide: lecture-12.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 14
+  title: Discrete-Time Queues 1
+  slide: lecture-13.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 15
+  title: Discrete-Time Queues 2
+  slide: lecture-14.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 16
+  title: Fair Queues
+  slide: lecture-15.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 17
+  title: Switching Algorithms
+  slide: lecture-16.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 18
+  title: Low Complexity Switch Scheduling Algorithms
+  slide: lecture-17.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 19
+  title: Link Layer
+  slide: lecture-18.pdf
+  url: 
+  icon: 🧮
+  tag: networking
+- name: Lecture 20
+  title: Scheduling in Wireless Networks
+  slide: lecture-19.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 21
+  title: Scheduling in Wireless Networks 2
+  slide: lecture-20.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 22
+  title: Scheduling in Wireless Networks 3
+  slide: lecture-21.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 23
+  title: A Joint Formulation of the Transport, Network and MAC Problems
+  slide: lecture-22.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 24
+  title: Continuous-Time Markov Chains
+  slide: lecture-23.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 25
+  title: Continuous-Time Queues
+  slide: lecture-24.pdf
+  url: 
+  icon: 🧮
+  tag: theory
+- name: Lecture 26
+  title: Network Calculus
+  slide: lecture-26.pdf
+  url: 
+  icon: 🧮
+  tag: theory

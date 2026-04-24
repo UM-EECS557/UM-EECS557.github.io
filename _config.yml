@@ -1,0 +1,13 @@
+title: EECS 270
+email: eecs270admin@umich.edu
+description: EECS 270 course website
+baseurl: ""
+url: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins: []
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

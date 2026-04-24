@@ -1,0 +1,24 @@
+recordings:
+  heading: Recordings
+  items:
+  - label: Lectures
+    url: https://umich.instructure.com/courses/838166/external_tools/80215
+  - label: Lecture slides
+    url: https://drive.google.com/drive/folders/1o94vkaVMNm4PSu6p68U7ZNaXem0zifLs?usp=sharing
+  - label: Lab slides
+    url: https://drive.google.com/drive/folders/1o94vkaVMNm4PSu6p68U7ZNaXem0zifLs?usp=sharing
+admin_requests:
+  heading: Admin Requests
+  items:
+  - title: Exam 1 Conflict
+    url: https://docs.google.com/forms/d/e/1FAIpQLScH3Y1NivaqrrChaOD5ataltFejKfjmqz0hm9x0JDGYI1i-yw/viewform
+    description: Report a conflict and request alternate scheduling for the first
+      exam.
+  - title: Exam 2 Conflict
+    url: https://docs.google.com/forms/d/e/1FAIpQLSfkVQ7GEjlCpK9zHwolTfjKEifQscgI9jUuiDtEprUJRKKgdQ/viewform
+    description: Report a conflict and request alternate scheduling for the second
+      exam.
+calendar:
+  label: Open in Google Calendar
+  url: https://calendar.google.com/calendar/u/0?cid=Y18yM2QxZjNlMWVkNmI2NDlkYTNlMTcxNTRhMjBkYTI0ZDU1ZTEyNTg0NGMzZmEyMmIxNWRmZmUzMTZiNmJhMDhlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20
+  
