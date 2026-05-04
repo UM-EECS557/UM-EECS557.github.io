@@ -59,7 +59,7 @@ lectures:
   icon: 🧮
   tag: theory
 - name: Lecture 11
-  title: Network Layer: Data Plane
+  title: Network Layer - Data Plane
   slide: lecture-10.pdf
   url: 
   icon: 🧮
