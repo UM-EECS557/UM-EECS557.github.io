@@ -283,6 +283,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  connection_pool (< 3.0.0)
   github-pages
 
 BUNDLED WITH
