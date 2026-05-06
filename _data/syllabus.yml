@@ -1,7 +1,9 @@
-intro_markdown: 'EECS 557 introduces you to the exciting world of digital logic design. Digital devices have proliferated in the last quarter century and have become essential in just about anything we do or depend on in a modern society. Computers of all varieties are now at the heart of commerce, communications, education, health care, entertainment, defense, etc. Personal computers have become standard fixtures in most homes and schools. But while the computer is the most visible digital computing device, it is by no means the only one. Embedded digital controllers can be found in such diverse applications as automobiles, airplanes, elevators, cellphones, televisions, cameras, and many kitchen appliances, to name just a tiny few.
-
-
-  This course provides you with a basic understanding of what digital devices are, how they operate, and how they can be designed to perform useful functions. It forms the foundation for the more advanced hardware courses in our CS, CE, and EE curricula, notably EECS 373, 427, and 470. You will learn about digital design through a combination of lectures, labs, and projects. Through the projects, you will learn to apply the concepts learned in lecture to design real digital circuits using modern design tools and FPGAs.'
+intro_markdown: 'EECS 557 studies 
+ communication networks through the mathematical principles that govern their design, performance, and control. The course connects Internet protocols with the models used to reason about congestion, routing, scheduling, queueing, switching, and resource allocation.
+ <p />
+ The first part of the course introduces Internet architecture, protocol layers, TCP, adaptive window flow control, routing, and network planning. The second part develops the analytical foundations needed to study network behavior, including convex optimization, utility maximization, Markov chains, queueing theory, packet switching, fair queueing, wireless scheduling, and network calculus. The course also discusses modern networked systems such as peer-to-peer networks, data-center load balancing, and cross-layer resource optimization.
+ <p />
+ By the end of the course, students should be able to model communication networks mathematically, analyze their performance, and understand how protocol and algorithmic choices shape efficiency, fairness, stability, and scalability.'
 sections:
 - id: attendance-policy
   title: Attendance Policy
