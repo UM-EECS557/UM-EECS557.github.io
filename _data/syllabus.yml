@@ -12,9 +12,8 @@ sections:
   - Internet architecture and protocol layers,
   - Adaptive window flows control and TCP protocols,
   - Routing algorithms and network planning,
+  - Queueing theory and Markov chains 
   - Network calculus,
-  - Queueing theory, 
-  - Markov chains and packet switching,
   - Fair queueing,
   - Scheduling in wireless networks,
   - Peer-to-peer networks,
