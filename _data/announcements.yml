@@ -4,18 +4,18 @@ items:
   body: This syllabus is under construction!  The content and links are subject to change. 
   url: https://um-eecs557.github.io
   active: true
-- title: Project 7 released! Checkpoint due June 17
+- title: Project 7 released! Checkpoint due 
   date: '2026-06-11'
-  body: Project 7 released! Checkpoint due June 17
-  url: https://umich.instructure.com/courses/815882/pages/project-7-sequential-calculator
+  body: Project 7 released! Checkpoint due 
+  url: https://um-eecs557.github.io/
   active: false
 - title: Exam Room Assignments
   date: ''
   body: Exam Room Assignments
-  url: https://umich.instructure.com/courses/815882/discussion_topics/2868297
+  url: https://um-eecs557.github.io/
   active: false
 - title: Exam Logistics
   date: ''
   body: Exam Logistics
-  url: https://umich.instructure.com/courses/815882/discussion_topics/2859917
+  url: https://um-eecs557.github.io/
   active: false

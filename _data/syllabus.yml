@@ -36,7 +36,7 @@ sections:
 - id: textbooks
   title: Textbooks
   bullet_items:
-  - <IMG SRC='https://lh3.googleusercontent.com/sitesv/AA5AbUCy0zzb2RqXafXGT_FjjJvxyFTy0Ca71ojHKHyIb8qRUWEM1yOSGTEXiXorPJnWu-vEbjkSyMj75CwLxSPNVetaZ-bcVX54kjz7te6WmBpvh2b00c3fYk6zZmCp60sftGhUeTZS6YS6QBLMvwepI1HzmawcFaHrtb0kOofQtSBPe0qvELia4kWoctGxcksdmp2Yi6p27xj7mQ8xZ5x8aKGr9YbrvuH3mU8-3jU=w1280' height='130' width='100' align=right />
+  - <IMG SRC='https://assets.cambridge.org/97811070/36055/cover/9781107036055.jpg' height='130' width='100' align=right />
    R. Srikant and Lei Ying, Communication Networks, An Optimization, Control, and Stochastic Networks Perspective, Cambridge University Press (February 17, 2014).
 
     - Slides and pdf files of some of the chapters can be found on [the book website](https://sites.google.com/view/comm-networks).  
