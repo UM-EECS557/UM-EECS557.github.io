@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EECS 557: Communication Networks</title>
-<meta name="description" content="EECS 557 studies communication networks through the mathematical principles that govern their design, performance, and control. The course connects Internet protocols with the models used to reason about congestion, routing, scheduling, queueing, switching, and resource allocation. &lt;p /&gt; The first part of the course introduces Internet architecture, protocol layers, TCP, adaptive window flow control, routing, and network planning. The second part develops the analytical foundations needed to study network behavior, including convex optimization, utility maximization, Markov chains, queueing theory, packet switching, fair queueing, wireless scheduling, and network calculus. The course also discusses modern networked systems such as peer-to-peer networks, data-center load balancing, and cross-layer resource optimization. &lt;p /&gt; By the end of the course, students should be able to model communication networks mathematically, analyze their performance, and understand how protocol and algorithmic choices shape efficiency, fairness, stability, and scalability.">
+<meta name="description" content="EECS 557 develops the mathematical foundations needed to   model, analyze, and design communication networks, connecting Internet protocols with optimization, queueing, routing, scheduling, congestion control, and resource allocation.">
 <link rel="icon" href="favicon.ico">
 <link rel="stylesheet" href="assets/css/style.css">
 <script defer src="assets/js/site.js"></script>
@@ -20,14 +20,14 @@
 <a href="#syllabus">Syllabus</a>
 
 </nav>
-<img src=assets/headshots/EECS-informal.png width="250" />  
+<img src=assets/headshots/EECS-informal.png width="260" />  
 </div></header>
 <main class="wrap page-grid">
 <section class="hero">
 <!--
 <div class="hero-topline">The University of Michigan</div>
 -->
-<p class="dek">EECS 557 studies communication networks through the mathematical principles that govern their design, performance, and control. The course connects Internet protocols with the models used to reason about congestion, routing, scheduling, queueing, switching, and resource allocation. <p /> The first part of the course introduces Internet architecture, protocol layers, TCP, adaptive window flow control, routing, and network planning. The second part develops the analytical foundations needed to study network behavior, including convex optimization, utility maximization, Markov chains, queueing theory, packet switching, fair queueing, wireless scheduling, and network calculus. The course also discusses modern networked systems such as peer-to-peer networks, data-center load balancing, and cross-layer resource optimization. <p /> By the end of the course, students should be able to model communication networks mathematically, analyze their performance, and understand how protocol and algorithmic choices shape efficiency, fairness, stability, and scalability.</p>
+<p class="dek">EECS 557 develops the mathematical foundations needed to   model, analyze, and design communication networks, connecting Internet protocols with optimization, queueing, routing, scheduling, congestion control, and resource allocation.</p>
 <div class="meta">
 <span><b>Lectures:</b> TBD MoWe, 9-10:30am</span>
 <span><b>Labs:</b> </span>
@@ -46,7 +46,7 @@
 <a href="https://umich.instructure.com/courses/838166" target="_blank" rel="noopener noreferrer">Canvas</a>
 
 </div>
-<p class="hero-note">EECS 557 develops the mathematical foundations needed to model, analyze, and design communication networks, connecting Internet protocols with optimization, queueing, routing, scheduling, congestion control, and resource allocation.</p>
+
 </section>
 
 
@@ -607,41 +607,10 @@
 <div class="accordion-stack">
 
 <details class="accordion" open>
-<summary id="attendance-policy">Attendance Policy</summary>
-<div class="accordion-body prose">
-<p>In-person attendance is <strong>highly encouraged</strong>. If you must miss class for any reason, recordings of the lectures can be accessed through this link no later than a few hours after the lecture. Lectures cannot be attended remotely via Zoom.
-<strong>Lab sessions require attendance, and labs are graded</strong>.</p>
-
-
-
-
-
-
-
-</div>
-</details>
-
-<details class="accordion" open>
 <summary id="course-topics">Course Topics</summary>
 <div class="accordion-body prose">
 
 <ul><li>Internet architecture and protocol layers,</li><li>Adaptive window flows control and TCP protocols,</li><li>Routing algorithms and network planning,</li><li>Network calculus,</li><li>Queueing theory,</li><li>Markov chains and packet switching,</li><li>Fair queueing,</li><li>Scheduling in wireless networks,</li><li>Peer-to-peer networks,</li><li>Load balancing in data centers,</li><li>Convex optimization and resource optimization</li></ul>
-
-
-
-
-
-</div>
-</details>
-
-<details class="accordion" >
-<summary id="projects">Projects</summary>
-<div class="accordion-body prose">
-<p>You will complete <strong>one or two projects</strong> through the semester. In these projects, you will design and implement various communication network scenarios to understand the concepts discussed in the lectures.
-The projects should be independent to each other.</p>
-<p>For further details on the projects, please refer to the <a href="">Projects Overview</a> page.</p>
-
-
 
 
 
@@ -673,13 +642,29 @@ The projects should be independent to each other.</p>
 </details>
 
 <details class="accordion" >
+<summary id="projects">Projects</summary>
+<div class="accordion-body prose">
+<p>You will complete <strong>a set of projects</strong> through the semester. In these projects, you will design and implement various communication network scenarios to understand the concepts discussed in the lectures.
+The projects should be independent to each other.
+For further details on the projects, please refer to the <a href="">Projects Overview</a> page.</p>
+
+
+
+
+
+
+
+</div>
+</details>
+
+<details class="accordion" >
 <summary id="grading">Grading</summary>
 <div class="accordion-body prose">
 <p>Your final grade will be determined based on the following components:
 The 5 lowest quizzes will be dropped from your final grade calculation. The 2 lowest lab grades will also be dropped.</p>
 
 
-<div class="table-wrap compact-table"><table><thead><tr><th>Component</th><th>Weight</th></tr></thead><tbody><tr><td>Attendence and Quizzes</td><td>20%</td></tr><tr><td>Homework</td><td>40%</td></tr><tr><td>Exam 1</td><td>20%</td></tr><tr><td>Exam 2</td><td>20%</td></tr></tbody></table></div>
+<div class="table-wrap compact-table"><table><thead><tr><th>Component</th><th>Weight</th></tr></thead><tbody><tr><td>Attendance and Quizzes</td><td>20%</td></tr><tr><td>Homework</td><td>40%</td></tr><tr><td>Exam 1</td><td>20%</td></tr><tr><td>Exam 2</td><td>20%</td></tr></tbody></table></div>
 <p>Your final letter grade will be determined based on your overall percentage in the course, according to the following scale:</p>
 
 <div class="table-wrap compact-table"><table><thead><tr><th>Percentage</th><th>Letter Grade</th></tr></thead><tbody><tr><td>100% - 95%</td><td>A+</td></tr><tr><td>95% - 90%</td><td>A</td></tr><tr><td>90% - 85%</td><td>A-</td></tr><tr><td>85% - 80%</td><td>B+</td></tr><tr><td>80% - 75%</td><td>B</td></tr><tr><td>75% - 70%</td><td>B-</td></tr><tr><td>70% - 60%</td><td>C</td></tr><tr><td>below 60%</td><td>E</td></tr></tbody></table></div>
@@ -706,8 +691,23 @@ If you are unsure about what constitutes collaboration versus copying, please as
 </div>
 </details>
 
+<details class="accordion" open>
+<summary id="attendance-policy">Attendance Policy</summary>
+<div class="accordion-body prose">
+<p>In-person attendance is <strong>highly encouraged</strong>. If you must miss class for any reason, recordings of the lectures can be accessed through this link no later than a few hours after the lecture. Lectures cannot be attended remotely via Zoom.
+<strong>Lab sessions require attendance, and labs are graded</strong>.</p>
+
+
+
+
+
+
+
+</div>
+</details>
+
 <details class="accordion" >
-<summary id="attendance-policy">Attendance and pop quiz policy</summary>
+<summary id="attendance-policy">Pop quiz policy</summary>
 <div class="accordion-body prose">
 <p>You receive zero point if missing 50% or more pop quizzes. You are not allowed to take the quiz if you are not present when the quiz is distributed. You have five free absences (medical and non-medical) and will receive no penalty for missing a quiz if the instructor receives the absence note by 10am on the lecture day. You have unlimited excused absences for traveling due to university business. These absences need to be preapproved before you travel. The final grade of attendance and pop quizzes is based on the average.</p>
 

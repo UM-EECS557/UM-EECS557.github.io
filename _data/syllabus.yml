@@ -5,13 +5,6 @@ intro_markdown: 'EECS 557 studies
  <p />
  By the end of the course, students should be able to model communication networks mathematically, analyze their performance, and understand how protocol and algorithmic choices shape efficiency, fairness, stability, and scalability.'
 sections:
-- id: attendance-policy
-  title: Attendance Policy
-  markdown: In-person attendance is **highly encouraged**. 
-    If you must miss class for any reason, recordings of the lectures can be accessed through this link no later than a few hours after the lecture. Lectures cannot be attended remotely via Zoom.  
-    
-    **Lab sessions require attendance, and labs are graded**. 
-  open: true
 - id: course-topics
   title: Course Topics
   open: true
@@ -27,14 +20,7 @@ sections:
   - Peer-to-peer networks,
   - Load balancing in data centers,
   - Convex optimization and resource optimization
-- id: projects
-  title: Projects
-  markdown: 'You will complete **one or two projects** through the semester. In these projects, you will design and implement various communication network scenarios to understand the concepts discussed in the lectures. 
 
-    The projects should be independent to each other. 
-
-
-    For further details on the projects, please refer to the [Projects Overview]() page.'
 - id: textbooks
   title: Textbooks
   bullet_items:
@@ -53,6 +39,14 @@ sections:
 
   - Lecture recordings from Winter 2021 can be found under [Media Gallery](https://umich.instructure.com/courses/838166/external_tools/53084)
 
+- id: projects
+  title: Projects
+  markdown: 'You will complete **a set of projects** through the semester. In these projects, you will design and implement various communication network scenarios to understand the concepts discussed in the lectures. 
+
+    The projects should be independent to each other. 
+
+    For further details on the projects, please refer to the [Projects Overview]() page.'
+
 - id: grading
   title: Grading
   markdown: 'Your final grade will be determined based on the following components:
@@ -63,7 +57,7 @@ sections:
     - Component
     - Weight
     rows:
-    - - Attendence and Quizzes
+    - - Attendance and Quizzes
       - 20%
     - - Homework
       - 40%
@@ -128,7 +122,15 @@ sections:
     markdown: The use of generative AI tools is not permitted for writing code or completing assignments in this course.
 
 - id: attendance-policy
-  title: Attendance and pop quiz policy
+  title: Attendance Policy
+  markdown: In-person attendance is **highly encouraged**. 
+    If you must miss class for any reason, recordings of the lectures can be accessed through this link no later than a few hours after the lecture. Lectures cannot be attended remotely via Zoom.  
+    
+    **Lab sessions require attendance, and labs are graded**. 
+  open: true
+
+- id: attendance-policy
+  title: Pop quiz policy
   markdown: You receive zero point if missing 50% or more pop quizzes.  
     You are not allowed to take the quiz if you are not present when the quiz is distributed. 
     You have five free absences (medical and non-medical) and will receive no penalty for missing a quiz if the instructor receives the absence note by 10am on the lecture day. You have unlimited excused absences for traveling due to university business. These absences need to be preapproved before you travel. 
