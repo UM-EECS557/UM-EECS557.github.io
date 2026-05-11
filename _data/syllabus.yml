@@ -3,7 +3,7 @@ intro_markdown: 'EECS 557 studies
  <p />
  The first part of the course introduces Internet architecture, protocol layers, TCP, adaptive window flow control, routing, and network planning. The second part develops the analytical foundations needed to study network behavior, including convex optimization, utility maximization, Markov chains, queueing theory, packet switching, fair queueing, wireless scheduling, and network calculus. The course also discusses modern networked systems such as peer-to-peer networks, data-center load balancing, and cross-layer resource optimization.
  <p />
- By the end of the course, students should be able to model communication networks mathematically, analyze their performance, and understand how protocol and algorithmic choices shape efficiency, fairness, stability, and scalability.'
+ By the end of the course, students should be able to model communication networks mathematically, analyze their performance, conduct simulation and measurement for verification, and understand how protocol and algorithmic choices shape efficiency, fairness, stability, and scalability.'
 sections:
 - id: course-topics
   title: Course Topics
